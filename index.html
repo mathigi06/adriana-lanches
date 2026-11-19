@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adriana Lanches — Lanches e delivery</title>
+  <meta name="description" content="Adriana Lanches: hambúrgueres e lanches feitos na hora, com delivery. Veja o cardápio e peça pelo WhatsApp (67) 99220-6668." />
+  <meta name="theme-color" content="#0e0c0b" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Yellowtail&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img class="loader__logo" src="img/logo.png" alt="" width="120" height="120" />
+      <span class="loader__bar"><i></i></span>
+    </div>
+  </div>
+
+  <!-- Barra de progresso da rolagem -->
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <!-- Header -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Adriana Lanches — início"><img src="img/logo.png" alt="" width="52" height="52" /><span class="logo__text"><b>Adriana</b><small>Lanches</small></span></a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#combos">Combos</a>
+        <a href="#loja">Atendimento</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+
+      <div class="header__actions">
+        <span class="status" data-status><i></i><span>Verificando…</span></span>
+        <a href="#pedir" class="btn btn--sm">Pedir agora</a>
+        <button class="burger-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav>
+      <a href="#sobre"><small>01</small>Sobre</a>
+      <a href="#cardapio"><small>02</small>Cardápio</a>
+      <a href="#combos"><small>03</small>Combos</a>
+      <a href="#loja"><small>04</small>Atendimento</a>
+      <a href="#faq"><small>05</small>Dúvidas</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="#pedir" class="btn">Pedir agora</a>
+      <p><a href="https://wa.me/5567992206668" target="_blank" rel="noopener">(67) 99220-6668</a> · @adrianalanches1976</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Lanches &amp; delivery</p>
+          <h1 class="hero__title">
+            <span class="line"><span>Feito na hora,</span></span>
+            <span class="line"><span>direto pra</span></span>
+            <span class="line"><span class="accent">sua porta.</span></span>
+          </h1>
+          <p class="hero__lead reveal">Hambúrgueres e lanches caprichados, preparados no momento do pedido e entregues quentinhos. Pede pelo WhatsApp que a gente leva.</p>
+          <div class="hero__ctas reveal">
+            <a href="https://wa.me/5567992206668?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20%F0%9F%8D%94" target="_blank" rel="noopener" class="btn">Pedir no WhatsApp</a>
+            <a href="#cardapio" class="btn btn--ghost">Ver cardápio <span aria-hidden="true">→</span></a>
+          </div>
+          <ul class="hero__meta reveal">
+            <li><strong>Delivery</strong><span>na sua casa</span></li>
+            <li><strong>Retirada</strong><span>no balcão</span></li>
+            <li><strong>Na hora</strong><span>feito no pedido</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__img" data-parallax="0.12">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80" alt="Hambúrguer artesanal com queijo derretido" fetchpriority="high" />
+          </div>
+          <div class="hero__badge" data-parallax="-0.08">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" /></defs>
+              <text><textPath href="#circ">• ADRIANA • LANCHES • DELIVERY </textPath></text>
+            </svg>
+            <span>🛵</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Blend 180g</span><i>✦</i><span>Pão brioche</span><i>✦</i><span>Cheddar inglês</span><i>✦</i><span>Bacon defumado</span><i>✦</i><span>Molho da casa</span><i>✦</i><span>Batata rústica</span><i>✦</i>
+        <span>Blend 180g</span><i>✦</i><span>Pão brioche</span><i>✦</i><span>Cheddar inglês</span><i>✦</i><span>Bacon defumado</span><i>✦</i><span>Molho da casa</span><i>✦</i><span>Batata rústica</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="container about__grid">
+        <div class="about__media reveal reveal--clip">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80" alt="Lanchonete" loading="lazy" />
+        </div>
+        <div class="about__copy">
+          <p class="eyebrow reveal">Nossa história</p>
+          <h2 class="h2 reveal">Feito com capricho, <span class="accent">com gosto de casa.</span></h2>
+          <p class="reveal">A Adriana Lanches nasceu da vontade de servir lanche de verdade: bem servido, feito na hora e com aquele tempero caseiro que faz a gente pedir de novo. Cada pedido é preparado no momento, com ingredientes frescos.</p>
+          <p class="reveal">Seja no balcão ou no delivery, a regra é uma só: se a gente não comeria, não sai da cozinha.</p>
+
+          <div class="stats">
+            <div class="stat reveal"><strong data-count="100" data-suffix="%">0</strong><span>feito na hora</span></div>
+            <div class="stat reveal"><strong data-count="20" data-suffix="+">0</strong><span>opções no cardápio</span></div>
+            <div class="stat reveal"><strong data-count="6">0</strong><span>dias por semana</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCROLL STORY: anatomia do burger -->
+    <section class="story" id="anatomia" aria-label="Anatomia do nosso burger">
+      <div class="story__sticky">
+        <div class="container story__grid">
+          <div class="story__visual">
+            <div class="story__ring"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" /><circle class="story__ring-fill" cx="50" cy="50" r="47" /></svg></div>
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80" alt="Detalhe do burger com camadas" loading="lazy" />
+          </div>
+          <div class="story__steps">
+            <p class="eyebrow">Anatomia do burger</p>
+            <ol>
+              <li class="is-active"><span class="story__num">01</span><h3>Pão brioche</h3><p>Assado diariamente, levemente adocicado e selado na manteiga.</p></li>
+              <li><span class="story__num">02</span><h3>Blend 180g</h3><p>Costela + acém, moído na hora e selado em fogo alto.</p></li>
+              <li><span class="story__num">03</span><h3>Cheddar inglês</h3><p>Derretido em cima da carne, ainda na chapa.</p></li>
+              <li><span class="story__num">04</span><h3>Molho da casa</h3><p>Receita secreta. Só sabemos que tem defumado e muito carinho.</p></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section class="section menu" id="cardapio">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Cardápio</p>
+          <h2 class="h2 reveal">Escolha o seu <span class="accent">favorito.</span></h2>
+          <p class="section__sub reveal">Todos os burgers acompanham pão brioche. Troque por pão australiano ou sem glúten sem custo extra.</p>
+        </div>
+
+        <div class="tabs reveal" role="tablist" aria-label="Categorias do cardápio">
+          <button role="tab" class="tab is-active" data-cat="burgers" aria-selected="true">Burgers</button>
+          <button role="tab" class="tab" data-cat="smash" aria-selected="false">Smash</button>
+          <button role="tab" class="tab" data-cat="veggie" aria-selected="false">Veggie</button>
+          <button role="tab" class="tab" data-cat="acomp" aria-selected="false">Acompanhamentos</button>
+          <button role="tab" class="tab" data-cat="bebidas" aria-selected="false">Bebidas</button>
+          <button role="tab" class="tab" data-cat="doces" aria-selected="false">Sobremesas</button>
+          <span class="tabs__indicator" aria-hidden="true"></span>
+        </div>
+
+        <div class="menu__list" id="menu-list" role="tabpanel" aria-live="polite"></div>
+
+        <p class="menu__note reveal">🌶️ apimentado · 🌱 vegetariano · ⭐ mais pedido — Preços sujeitos a alteração.</p>
+      </div>
+    </section>
+
+    <!-- COMBOS -->
+    <section class="section combos" id="combos">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow reveal">Combos</p>
+            <h2 class="h2 reveal">Mais sabor, <span class="accent">menos gasto.</span></h2>
+          </div>
+          <p class="section__sub reveal">Todo combo vem com batata rústica e refri lata. Troque o refri por suco natural por + R$ 4.</p>
+        </div>
+
+        <div class="combos__grid">
+          <article class="combo reveal">
+            <div class="combo__img"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80" alt="Combo individual com burger e batata" loading="lazy" /></div>
+            <div class="combo__body">
+              <h3>Combo Solo</h3>
+              <p>1 burger clássico + batata rústica + refri lata</p>
+              <div class="combo__price"><s>R$ 52</s><strong>R$ 44,90</strong></div>
+            </div>
+          </article>
+          <article class="combo combo--featured reveal">
+            <span class="combo__tag">Mais pedido</span>
+            <div class="combo__img"><img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=800&q=80" alt="Combo para dois com burgers e batatas" loading="lazy" /></div>
+            <div class="combo__body">
+              <h3>Combo Dupla</h3>
+              <p>2 burgers à escolha + batata grande + 2 refris</p>
+              <div class="combo__price"><s>R$ 108</s><strong>R$ 89,90</strong></div>
+            </div>
+          </article>
+          <article class="combo reveal">
+            <div class="combo__img"><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=800&q=80" alt="Combo família com vários burgers" loading="lazy" /></div>
+            <div class="combo__body">
+              <h3>Combo Família</h3>
+              <p>4 smash + 2 batatas grandes + refri 2L</p>
+              <div class="combo__price"><s>R$ 190</s><strong>R$ 159,90</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA HORIZONTAL -->
+    <section class="gallery" aria-label="Galeria de fotos">
+      <div class="gallery__sticky">
+        <div class="container gallery__head">
+          <p class="eyebrow">Galeria</p>
+          <h2 class="h2">Dá uma <span class="accent">olhada.</span></h2>
+        </div>
+        <div class="gallery__track">
+          <figure><img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=900&q=80" alt="Burger duplo" loading="lazy" /></figure>
+          <figure><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80" alt="Batata frita" loading="lazy" /></figure>
+          <figure><img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=900&q=80" alt="Burger com bacon" loading="lazy" /></figure>
+          <figure><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=80" alt="Milkshake" loading="lazy" /></figure>
+          <figure><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Salão da loja" loading="lazy" /></figure>
+          <figure><img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=900&q=80" alt="Burger com queijo" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section reviews">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Quem comeu, aprovou</p>
+          <h2 class="h2 reveal">Quem pede, <span class="accent">volta.</span></h2>
+        </div>
+        <div class="reviews__grid">
+          <blockquote class="review reveal">
+            <div class="review__stars" aria-label="5 estrelas">★★★★★</div>
+            <p>“Melhor lanche da cidade, sem exagero. O molho da casa é viciante.”</p>
+            <footer><span class="avatar">J</span><div><strong>Juliana R.</strong><small>via Instagram</small></div></footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <div class="review__stars" aria-label="5 estrelas">★★★★★</div>
+            <p>“Chegou quentinho, bem embalado e antes do tempo. Virou o pedido de toda sexta.”</p>
+            <footer><span class="avatar">P</span><div><strong>Pedro H.</strong><small>via WhatsApp</small></div></footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <div class="review__stars" aria-label="5 estrelas">★★★★★</div>
+            <p>“Atendimento rápido, lanche bem servido e a batata é outro nível.”</p>
+            <footer><span class="avatar">C</span><div><strong>Camila S.</strong><small>via Instagram</small></div></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- A LOJA -->
+    <section class="section store" id="loja">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Atendimento</p>
+          <h2 class="h2 reveal">Tudo o que você <span class="accent">precisa saber.</span></h2>
+        </div>
+
+        <div class="store__grid">
+          <div class="store__info">
+            <div class="info-card reveal">
+              <h3>Como pedir</h3>
+              <p>Faça seu pedido pelo WhatsApp. A gente prepara na hora e entrega na sua casa, ou você retira no balcão.</p>
+              <a href="https://wa.me/5567992206668?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20%F0%9F%8D%94" target="_blank" rel="noopener" class="link">Chamar no WhatsApp →</a>
+            </div>
+
+            <div class="info-card reveal">
+              <h3>Horário de funcionamento <span class="status" data-status><i></i><span>…</span></span></h3>
+              <ul class="hours" id="hours"></ul>
+            </div>
+
+            <div class="info-card info-card--split reveal">
+              <div>
+                <h3>Contato</h3>
+                <p><a href="https://wa.me/5567992206668" target="_blank" rel="noopener">(67) 99220-6668</a><br />
+                <a href="https://instagram.com/adrianalanches1976" target="_blank" rel="noopener">@adrianalanches1976</a></p>
+              </div>
+              <div>
+                <h3>Pagamento</h3>
+                <ul class="chips">
+                  <li>Pix</li><li>Crédito</li><li>Débito</li><li>VR / VA</li><li>Dinheiro</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="info-card reveal">
+              <h3>Serviços</h3>
+              <ul class="chips">
+                <li>Delivery</li><li>Retirada no balcão</li><li>Pedido pelo WhatsApp</li><li>Lanches feitos na hora</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Quando tiver o endereço, dá pra trocar este card por um mapa -->
+          <div class="store__brand reveal">
+            <img src="img/logo.png" alt="Logo da Adriana Lanches" width="300" height="300" loading="lazy" />
+            <p class="store__brand-name">Adriana <span>Lanches</span></p>
+            <a href="https://wa.me/5567992206668" target="_blank" rel="noopener" class="store__phone">(67) 99220-6668</a>
+            <div class="store__brand-ctas">
+              <a href="https://wa.me/5567992206668?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20%F0%9F%8D%94" target="_blank" rel="noopener" class="btn">Pedir agora</a>
+              <a href="https://instagram.com/adrianalanches1976" target="_blank" rel="noopener" class="btn btn--ghost">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEDIR -->
+    <section class="section order" id="pedir">
+      <div class="container">
+        <div class="order__box reveal">
+          <div class="order__copy">
+            <p class="eyebrow">Delivery & retirada</p>
+            <h2 class="h2">Bateu a fome? <span class="accent">A gente leva.</span></h2>
+            <p>Chama no WhatsApp, escolhe o seu lanche e a gente prepara na hora. Consulte a taxa de entrega para o seu bairro.</p>
+          </div>
+          <div class="order__actions">
+            <a href="https://wa.me/5567992206668?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20%F0%9F%8D%94" target="_blank" rel="noopener" class="order__btn order__btn--wa">
+              <span class="order__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.1 0 12 0 5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.6c1.8 1 3.8 1.5 5.7 1.5 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4z"/></svg></span>
+              <span><strong>WhatsApp</strong><small>Pedido direto, sem taxa de app</small></span>
+              <i aria-hidden="true">→</i>
+            </a>
+            <a href="https://instagram.com/adrianalanches1976" target="_blank" rel="noopener" class="order__btn order__btn--ig">
+              <span class="order__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></span>
+              <span><strong>Instagram</strong><small>@adrianalanches1976</small></span>
+              <i aria-hidden="true">→</i>
+            </a>
+            <a href="#loja" class="order__btn">
+              <span class="order__icon">⌂</span>
+              <span><strong>Retirar no balcão</strong><small>Peça antes e retire pronto</small></span>
+              <i aria-hidden="true">→</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container faq__grid">
+        <div>
+          <p class="eyebrow reveal">Dúvidas</p>
+          <h2 class="h2 reveal">Perguntas <span class="accent">frequentes.</span></h2>
+          <p class="section__sub reveal">Não achou o que procurava? Chama no WhatsApp que a gente responde rapidinho.</p>
+        </div>
+        <div class="faq__list">
+          <details class="reveal"><summary>Qual o ponto da carne?<i></i></summary><div><p>Servimos ao ponto para mal-passado por padrão. É só avisar no pedido se preferir outro ponto.</p></div></details>
+          <details class="reveal"><summary>Vocês têm opção sem glúten ou vegetariana?<i></i></summary><div><p>Sim! Temos pão sem glúten (sem custo extra) e burgers vegetarianos com blend de grão-de-bico e cogumelos.</p></div></details>
+          <details class="reveal"><summary>Qual a área de entrega?<i></i></summary><div><p>Chame no WhatsApp (67) 99220-6668 e informe o seu bairro — a gente confirma se entrega e qual é a taxa.</p></div></details>
+          <details class="reveal"><summary>Aceitam reservas para grupos?<i></i></summary><div><p>Para grupos acima de 8 pessoas, reserve pelo WhatsApp com pelo menos um dia de antecedência.</p></div></details>
+          <details class="reveal"><summary>Fazem eventos e festas?<i></i></summary><div><p>Fazemos! Temos pacotes de mini burgers para festas e eventos corporativos. Peça um orçamento.</p></div></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__big" aria-hidden="true">Adriana</div>
+      <div class="footer__grid">
+        <div>
+          <a href="#inicio" class="logo"><img src="img/logo.png" alt="" width="52" height="52" /><span class="logo__text"><b>Adriana</b><small>Lanches</small></span></a>
+          <p>Lanches feitos na hora, com delivery.<br />(67) 99220-6668</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <a href="#sobre">Sobre</a><a href="#cardapio">Cardápio</a><a href="#combos">Combos</a><a href="#loja">Atendimento</a>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <a href="https://wa.me/5567992206668" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://instagram.com/adrianalanches1976" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div>
+          <h4>Horário</h4>
+          <p>Ter a Qui · 18h às 23h30<br />Sex e Sáb · 18h às 00h30<br />Dom · 18h às 23h<br />Seg · fechado</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year"></span> Adriana Lanches. Todos os direitos reservados.</p>
+        <a href="#inicio" class="to-top">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5567992206668" target="_blank" rel="noopener" class="fab" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.900-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.600 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.1 0 12 0 5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.6c1.8 1 3.8 1.5 5.7 1.5 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
